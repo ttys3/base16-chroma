@@ -67,8 +67,8 @@
 /* NameNamespace */ .chroma .nn { color: var(--color-b16-class) }
 /* NameOther */ .chroma .nx { color: var(--color-b16-func) }
 /* NameProperty */ .chroma .py { color: var(--color-b16-var) }
-/* NameTag */ .chroma .nt { color: var(--color-b16-kwd) }
-/* NameVariable */ .chroma .nv { color: var(--color-b16-var) }
+/* NameTag */ .chroma .nt { color: var(--color-b16-func) }
+/* NameVariable */ .chroma .nv { color: var(--color-b16-func) }
 /* NameVariableClass */ .chroma .vc { color: var(--color-b16-func) }
 /* NameVariableGlobal */ .chroma .vg { color: var(--color-b16-func) }
 /* NameVariableInstance */ .chroma .vi { color: var(--color-b16-var) }
