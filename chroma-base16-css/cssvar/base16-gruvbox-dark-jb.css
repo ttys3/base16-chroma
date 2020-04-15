@@ -1,8 +1,8 @@
 /**
  * base16 colorscheme for chroma
  * --------------------------------
- * scheme name: atelier-heath
- * scheme author: Bram de Haan (http://atelierbramdehaan.nl)
+ * scheme name: gruvbox-dark-jb
+ * scheme author: 荒野無燈(https://ttys3.net), Dawid Kurek (dawikur@gmail.com), Vincent Parizet (vincent.parizet@hotmail.fr), morhetz (https://github.com/Vincent-P/gruvbox-intellij-theme)
  * --------------------------------
  * template by: 荒野無燈@ttys3.net
  * repo url: https://github.com/ttys3/base16-chroma
@@ -17,22 +17,22 @@
  **/
 
 :root {
-  --color-b16-bg:         #1b181b;   /* Default Background */
-  --color-b16-bg-lighter: #292329;   /* Lighter Background (Used for status bars) */
-  --color-b16-bg-sel:     #695d69;   /* Selection Background */
-  --color-b16-cmt:        #776977;   /* Comments, Invisibles, Line Highlighting */
-  --color-b16-fg-darker:  #9e8f9e;   /* Darker Foreground (Used for status bars) */
-  --color-b16-fg:         #ab9bab;   /* Default Foreground, Caret, Delimiters, Operators */
-  --color-b16-fg-light:   #d8cad8;   /* Light Foreground (Not often used) */
-  --color-b16-bg-light:   #f7f3f7;   /* Light Background (Not often used) */
-  --color-b16-var:        #ca402b;   /* Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
-  --color-b16-const:      #a65926;   /* Integers, Boolean, Constants, XML Attributes, Markup Link Url */
-  --color-b16-class:      #bb8a35;   /* Classes, Markup Bold, Search Text Background */
-  --color-b16-str:        #918b3b;   /* Strings, Inherited Class, Markup Code, Diff Inserted */
-  --color-b16-regex:      #159393;   /* Support, Regular Expressions, Escape Characters, Markup Quotes */
-  --color-b16-func:       #516aec;   /* Functions, Methods, Attribute IDs, Headings */
-  --color-b16-kwd:        #7b59c0;   /* Keywords, Storage, Selector, Markup Italic, Diff Changed */
-  --color-b16-embd:       #cc33cc;   /* Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */
+  --color-b16-bg:         #262626;   /* Default Background */
+  --color-b16-bg-lighter: #3a3a3a;   /* Lighter Background (Used for status bars) */
+  --color-b16-bg-sel:     #4e4e4e;   /* Selection Background */
+  --color-b16-cmt:        #8a8a8a;   /* Comments, Invisibles, Line Highlighting */
+  --color-b16-fg-darker:  #949494;   /* Darker Foreground (Used for status bars) */
+  --color-b16-fg:         #b09d79;   /* Default Foreground, Caret, Delimiters, Operators */
+  --color-b16-fg-light:   #b09d79;   /* Light Foreground (Not often used) */
+  --color-b16-bg-light:   #ebdbb2;   /* Light Background (Not often used) */
+  --color-b16-var:        #d75f5f;   /* Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
+  --color-b16-const:      #6fafbd;   /* Integers, Boolean, Constants, XML Attributes, Markup Link Url */
+  --color-b16-class:      #afbf7e;   /* Classes, Markup Bold, Search Text Background */
+  --color-b16-str:        #afaf00;   /* Strings, Inherited Class, Markup Code, Diff Inserted */
+  --color-b16-regex:      #d3869b;   /* Support, Regular Expressions, Escape Characters, Markup Quotes */
+  --color-b16-func:       #83a598;   /* Functions, Methods, Attribute IDs, Headings */
+  --color-b16-kwd:        #c7773e;   /* Keywords, Storage, Selector, Markup Italic, Diff Changed */
+  --color-b16-embd:       #d79921;   /* Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */
 }
 
 /* Background */ .chroma { color: var(--color-b16-fg); background-color: var(--color-b16-bg) }
