@@ -1,3 +1,9 @@
 default:
   extension: .css
-  output: chroma-base16-css
+  output: chroma-base16-css/default
+
+cssvar:
+  extension: .css
+  output: chroma-base16-css/cssvar
+  
+  

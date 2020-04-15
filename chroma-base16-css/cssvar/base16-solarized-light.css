@@ -1,0 +1,118 @@
+/**
+ * pygments token to css class name map:
+ * https://github.com/pygments/pygments/blob/master/pygments/token.py#L124
+ *
+ * chroma token to css class name map:
+ * https://github.com/alecthomas/chroma/blob/master/types.go#L221
+ *
+ * thanks https://github.com/mohd-akram/base16-pygments/blob/master/templates/default.mustache
+ **/
+
+:root {
+  --color-b16-bg:       #fdf6e3;   /* Default Background */
+  --color-b16-bg-light: #eee8d5;   /* Lighter Background (Used for status bars) */
+  --color-b16-bg-sel:   #93a1a1;   /* Selection Background */
+  --color-b16-cmt:      #839496;   /* Comments, Invisibles, Line Highlighting */
+  --color-b16-fg-dark:  #657b83;   /* Dark Foreground (Used for status bars) */
+  --color-b16-fg:       #586e75;   /* Default Foreground, Caret, Delimiters, Operators */
+  --color-b16-fg-light: #073642;   /* Light Foreground (Not often used) */
+  --color-b16-bg-light: #002b36;   /* Light Background (Not often used) */
+  --color-b16-var:      #dc322f;   /* Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
+  --color-b16-num:      #cb4b16;   /* Integers, Boolean, Constants, XML Attributes, Markup Link Url */
+  --color-b16-class:    #b58900;   /* Classes, Markup Bold, Search Text Background */
+  --color-b16-str:      #859900;   /* Strings, Inherited Class, Markup Code, Diff Inserted */
+  --color-b16-regex:    #2aa198;   /* Support, Regular Expressions, Escape Characters, Markup Quotes */
+  --color-b16-func:     #268bd2;   /* Functions, Methods, Attribute IDs, Headings */
+  --color-b16-kwd:      #6c71c4;   /* Keywords, Storage, Selector, Markup Italic, Diff Changed */
+  --color-b16-embd:     #d33682;   /* Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */
+}
+
+/* Background */ .chroma { color: var(--color-b16-fg); background-color: var(--color-b16-bg) }
+/* Other */ .chroma .x { color: var(--color-b16-fg) }
+/* Error */ .chroma .err { color: var(--color-b16-var) }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%; background-color: var(--color-b16-bg-sel) }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+
+/* Keyword */ .chroma .k { color: var(--color-b16-kwd) }
+/* KeywordConstant */ .chroma .kc { color: var(--color-b16-kwd) }
+/* KeywordDeclaration */ .chroma .kd { color: var(--color-b16-kwd) }
+/* KeywordNamespace */ .chroma .kn { color: var(--color-b16-kwd) }
+/* KeywordPseudo */ .chroma .kp { color: var(--color-b16-func) }
+/* KeywordReserved */ .chroma .kr { color: var(--color-b16-kwd) }
+/* KeywordType */ .chroma .kt { color: var(--color-b16-var) }
+
+/* Name */ .chroma .n { color: var(--color-b16-func) }
+/* NameAttribute */ .chroma .na { color: var(--color-b16-func) }
+/* NameBuiltin */ .chroma .nb { color: var(--color-b16-var) }
+/* NameBuiltinPseudo */ .chroma .bp { color: var(--color-b16-var) }
+/* NameClass */ .chroma .nc { color: var(--color-b16-class) }
+/* NameConstant */ .chroma .no { color: var(--color-b16-class) }
+/* NameDecorator */ .chroma .nd { color: var(--color-b16-class) }
+/* NameEntity */ .chroma .ni { color: var(--color-b16-class) }
+/* NameException */ .chroma .ne { color: var(--color-b16-class) }
+/* NameFunction */ .chroma .nf { color: var(--color-b16-func) }
+/* NameFunctionMagic */ .chroma .fm { color: var(--color-b16-func) }
+/* NameLabel */ .chroma .nl { color: var(--color-b16-var) }
+/* NameNamespace */ .chroma .nn { color: var(--color-b16-class) }
+/* NameOther */ .chroma .nx { color: var(--color-b16-func) }
+/* NameProperty */ .chroma .py { color: var(--color-b16-var) }
+/* NameTag */ .chroma .nt { color: var(--color-b16-kwd) }
+/* NameVariable */ .chroma .nv { color: var(--color-b16-var) }
+/* NameVariableClass */ .chroma .vc { color: var(--color-b16-var) }
+/* NameVariableGlobal */ .chroma .vg { color: var(--color-b16-var) }
+/* NameVariableInstance */ .chroma .vi { color: var(--color-b16-var) }
+/* NameVariableMagic */ .chroma .vm { color: var(--color-b16-var) }
+
+/* Literal */ .chroma .l { color: var(--color-b16-str) }
+/* LiteralDate */ .chroma .ld { color: var(--color-b16-str) }
+/* LiteralString */ .chroma .s { color: var(--color-b16-str) }
+/* LiteralStringAffix */ .chroma .sa { color: var(--color-b16-str) }
+/* LiteralStringBacktick */ .chroma .sb { color: var(--color-b16-str) }
+/* LiteralStringChar */ .chroma .sc { color: var(--color-b16-str) }
+/* LiteralStringDelimiter */ .chroma .dl { color: var(--color-b16-embd) }
+/* LiteralStringDoc */ .chroma .sd { color: var(--color-b16-cmt) }
+/* LiteralStringDouble */ .chroma .s2 { color: var(--color-b16-str) }
+/* LiteralStringEscape */ .chroma .se { color: var(--color-b16-regex) }
+/* LiteralStringHeredoc */ .chroma .sh { color: var(--color-b16-str) }
+/* LiteralStringInterpol */ .chroma .si { color: var(--color-b16-embd) }
+/* LiteralStringOther */ .chroma .sx { color: var(--color-b16-str) }
+/* LiteralStringRegex */ .chroma .sr { color: var(--color-b16-regex) }
+/* LiteralStringSingle */ .chroma .s1 { color: var(--color-b16-str) }
+/* LiteralStringSymbol */ .chroma .ss { color: var(--color-b16-str) }
+
+/* LiteralNumber */ .chroma .m { color: var(--color-b16-num) }
+/* LiteralNumberBin */ .chroma .mb { color: var(--color-b16-num) }
+/* LiteralNumberFloat */ .chroma .mf { color: var(--color-b16-num) }
+/* LiteralNumberHex */ .chroma .mh { color: var(--color-b16-num) }
+/* LiteralNumberInteger */ .chroma .mi { color: var(--color-b16-num) }
+/* LiteralNumberIntegerLong */ .chroma .il { color: var(--color-b16-num) }
+/* LiteralNumberOct */ .chroma .mo { color: var(--color-b16-num) }
+
+/* Operator */ .chroma .o { color: var(--color-b16-fg) }
+/* OperatorWord */ .chroma .ow { color: var(--color-b16-fg) }
+/* Punctuation */ .chroma .p { color: var(--color-b16-fg) }
+
+/* Comment */ .chroma .c { color: var(--color-b16-cmt) }
+/* CommentHashbang */ .chroma .ch { color: var(--color-b16-cmt) }
+/* CommentMultiline */ .chroma .cm { color: var(--color-b16-cmt) }
+/* CommentSingle */ .chroma .c1 { color: var(--color-b16-cmt) }
+/* CommentSpecial */ .chroma .cs { color: var(--color-b16-cmt) }
+/* CommentPreproc */ .chroma .cp { color: var(--color-b16-embd) }
+/* CommentPreprocFile */ .chroma .cpf { color: var(--color-b16-str) }
+
+/* Generic */ .chroma .g { color: var(--color-b16-fg) }
+/* GenericDeleted */ .chroma .gd { color: var(--color-b16-var) }
+/* GenericEmph */ .chroma .ge { color: var(--color-b16-fg); font-style: italic }
+/* GenericError */ .chroma .gr { color: var(--color-b16-fg) }
+/* GenericHeading */ .chroma .gh { color: var(--color-b16-func) }
+/* GenericInserted */ .chroma .gi { color: var(--color-b16-str) }
+/* GenericOutput */ .chroma .go { color: var(--color-b16-fg) }
+/* GenericPrompt */ .chroma .gp { color: var(--color-b16-fg) }
+/* GenericStrong */ .chroma .gs { color: var(--color-b16-fg); font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: var(--color-b16-func) }
+/* GenericTraceback */ .chroma .gt { color: var(--color-b16-fg) }
+/* GenericUnderline */ .chroma .gl { color: var(--color-b16-fg); text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: var(--color-b16-bg); text-decoration: underline }
